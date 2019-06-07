@@ -1,0 +1,64 @@
+<pages>
+<link>
+<title>Mobiles</title>
+<url>utopia_prod.php?id=6</url>
+</link>
+<link>
+<title>Laptops</title>
+<url>utopia_prod.php?id=7</url>
+</link>
+<link>
+<title>Home appliances
+</title>
+<url>
+utopia_prod.php?id=11
+</url>
+</link>
+<link>
+<title>Chandeliers</title>
+<url>utopia_prod.php?id=17</url>
+</link>
+<link>
+<title>Curtains</title>
+<url>utopia_prod.php?id=13</url>
+</link>
+<link>
+	<title>Furniture
+	</title>
+	<url>utopia_prod.php?id=12
+	</url>
+</link>
+<link>
+	<title>Women topwear
+	</title>
+	<url>
+		utopia_prod.php?id=15
+	</url>
+</link><link>
+	<title>
+	</title>
+	<url>Women Ethinic
+		utopia_prod.php?id=16
+	</url>
+</link><link>
+	<title>Men Topwear
+	</title>
+	<url>
+		utopia_prod.php?id=8
+	</url>
+</link><link>
+	<title>Men Bottomwear
+	</title>
+	<url>
+		utopia_prod.php?id=9
+	</url>
+</link>
+<link>
+	<title>
+		Men Accessories
+	</title>
+	<url>
+		utopia_prod.php?id=10
+	</url>
+</link>
+</pages>
