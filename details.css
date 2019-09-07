@@ -1,0 +1,77 @@
+.descripimg{
+	width:60%;
+	height:500px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:4%;
+	display:block;
+}
+
+.picbg{
+	
+	float: left;
+    padding: 20px;
+    width: 50%;
+}
+
+.desbg{
+	float: left;
+    padding: 20px;
+    width: 50%;
+}
+
+.brandname{
+	color:black;
+	font-size:30px;
+	font-family:Calibri;
+	font-weight:bold;
+	padding:0;
+}
+
+.category{
+	color:grey;
+	font-size:20px;
+	font-family:Calibri;
+	font-weight:none;
+}
+
+.cost{
+	color:red;
+	font-size:30px;
+	font-family:Calibri;
+	font-weight:bold;
+}
+
+.fake{
+	color:black;
+	font-size:18px;
+	font-family:Calibri;
+	font-weight:bold;
+}
+
+.tax{
+	color:blue;
+	font-size:16px;
+	font-family:Calibri;
+	font-weight:bold;
+}
+
+.productdetails{
+	color:black;
+	font-size:30px;
+	font-family:Calibri;
+	font-weight:bold;
+}
+
+.details{
+	color:black;
+	font-size:20px;
+	font-family:Calibri;
+	font-weight:bold;
+}
+
+.bg{
+	background-color:#6495ED;
+	margin-right:2%;
+}
+	

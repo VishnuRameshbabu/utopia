@@ -1,45 +1,46 @@
-<?php
-$xmlDoc=new DOMDocument();
-$xmlDoc->load("searchfunc_ecom.xml");
-
-$x=$xmlDoc->getElementsByTagName('link');
-
-//get the q parameter from URL
-$q=$_GET["q"];
-
-//lookup all links from the xml file if length of q>0
-if (strlen($q)>0) {
-  $hint="";
-  for($i=0; $i<($x->length); $i++) {
-    $y=$x->item($i)->getElementsByTagName('title');
-    $z=$x->item($i)->getElementsByTagName('url');
-    if ($y->item(0)->nodeType==1) {
-      //find a link matching the search text
-      if (stristr($y->item(0)->childNodes->item(0)->nodeValue,$q)) {
-        if ($hint=="") {
-          $hint="<a href='" . 
-          $z->item(0)->childNodes->item(0)->nodeValue . 
-          "' target='_blank'>" . 
-          $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
-        } else {
-          $hint=$hint . "<br /><a href='" . 
-          $z->item(0)->childNodes->item(0)->nodeValue . 
-          "' target='_blank'>" . 
-          $y->item(0)->childNodes->item(0)->nodeValue . "</a>";
-        }
-      }
+ <?php
+session_start();
+?> 
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="search.css">
+<link rel="stylesheet" href="utopia_style.css">
+<title>utopia</title>
+</head>
+</html>
+<html>
+<head>
+<script>
+function showResult(str) {
+  if (str.length==0) { 
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+    return;
+  }
+  if (window.XMLHttpRequest) {
+    xmlhttp=new XMLHttpRequest();
+  } 
+  xmlhttp.onreadystatechange=function() {
+    if (this.readyState==4 && this.status==200) {
+      document.getElementById("livesearch").innerHTML=this.responseText;
+      document.getElementById("livesearch").style.border="1px solid #A5ACB2";
     }
   }
-}
+  xmlhttp.open("GET","searchfunc_utopia_script.php?q="+str,true);
+  xmlhttp.send();
+} 
+</script>
+</head>
+<body class="search"><p class="homeicon"><a href="utopiamain.html">&#x1F3E0; </a></p>
+<div class="align">
+<p class="searchtitle">UTOPIA</p>
+<form>
+<input type="text" name="search" class="box" size="30" placeholder="Search.." onkeyup="showResult(this.value)">
+<button type="submit">&#128269;</button>
+<div id="livesearch"></div>
+</input>
+</form>
 
-// Set output to "no suggestion" if no hint was found
-// or to the correct values
-if ($hint=="") {
-  $response="no suggestion";
-} else {
-  $response=$hint;
-}
-
-//output the response
-echo $response;
-?>
+</body>
+</html>

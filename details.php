@@ -1,21 +1,23 @@
- <?php
+<?php
  error_reporting(1);
 session_start();
 extract($_REQUEST);
 if($_REQUEST['log']=='out')
 {
 session_destroy();
-header("location:hosp_index.html");
+header("location:utopiamain.html");
 }
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="utopia_style.css" >
+<link rel="stylesheet" href="details.css">
+<link rel="stylesheet" href="utopia_style.css">
 </head>
-<body><div class="navbar">
+<body>
+<div class="navbar">
 <div class="dropdown">
-    <button class="dropbtn"> &#9776; 
+    <button class="dropbtn"><p class="drop"> &#9776; </p>
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
@@ -51,54 +53,47 @@ header("location:hosp_index.html");
     </div>
   </div>
   <p class="logo"><a href="utopiamain.html">UTOPIA</a></p>
-  <?php
+  <!-- sign in podanum -->
+    <?php
 if($_SESSION['name']==True){
-    echo '<a href="signup_ecommerce.php">'.$_SESSION['name'].'</font></a>'; }
-    else{
- echo'<p class="icon"><a href="signup_ecommerce.php">&#128102;</a>';
-}
- ?>
-  <!-- <a href="#cart">Cart</a> -->
-  <?php
+    echo '<a href="signup_e-commerce">'.$_SESSION['name'].'</font></a>'; } ?>
+<!--   <a href="#cart">Cart</a> -->
+<?php
 if($_SESSION['name']==True){
     echo '<a href="?log=out">Logout</font></a>'; } ?>
   <a href="searchfunc_utopia.php">&#128269;</a>
 </div>
-<!-- <img src="stuff/men.jpg" style="width:100%"><hr>
-<p style="font-family:Calibri;font-size:30px;color:red;font-weight:bold;margin-left:2%">
-OUR PRODUCTS</p>
- --><?php
+<?php
+
+$id=$_GET['id'];
 $dbc=mysqli_connect('sql12.freemysqlhosting.net','sql12295317','k9Ng5LuYRi','sql12295317')
 or die("some error");
-$rand=mt_rand(1,4);//kV5lX4wmSt
-$query="SELECT * from product where category_id=$rand";
+$query="SELECT * from product where product_id=$id";
 $result=mysqli_query($dbc,$query);
-if ($rand==1) {
-  echo '<img src="stuff/men.jpg" style="width:100%"><hr>
-<p style="font-family:Calibri;font-size:30px;color:red;font-weight:bold;margin-left:2%">
-OUR PRODUCTS</p>';
-}
-elseif ($rand==2) {
-  echo '<img src="stuff/women.jpg" style="width:100%"><hr>
-<p style="font-family:Calibri;font-size:30px;color:red;font-weight:bold;margin-left:2%">
-OUR PRODUCTS</p>';
-
-}
-elseif ($rand==3) {
-  echo '<img src="stuff/electronics.jpg" style="width:100%"><hr>
-<p style="font-family:Calibri;font-size:30px;color:red;font-weight:bold;margin-left:2%">
-OUR PRODUCTS</p>';
-
-}
-else{
-  echo '<img src="stuff/Home decor.jpg" style="width:100%"><hr>
-<p style="font-family:Calibri;font-size:30px;color:red;font-weight:bold;margin-left:2%">
-OUR PRODUCTS</p>';}
-while($row=mysqli_fetch_array($result)){
-  $id_prod=$row['product_id'];
-echo '<div class="products"> <a href="details.php?id='.$id_prod.'"> <img src="stuff/'.$row['image'] .'" style="width:100% ;"></a> <div 
-class="container"><p class="bname">'.$row['product_name'].'</p><p class="price">Rs'.$row['price'].'</p></div> </div>';}
-//?>
-</body>
+$row=mysqli_fetch_array($result);
+$price=$row['price'];
+echo '<div class="picbg">';
+echo'<a target="_blank" href="stuff/'.$row['image'].'">';
+echo'<img src="stuff/'.$row['image'].'" class="descripimg" class="hover">';
+echo '</a>';
+$rand=mt_rand(200,500);
+$fakeprice=$price+$rand;
+echo '</div>';
+echo'<div class="desbg">';
+echo'<p class="brandname">'.$row['product_name'].'</p>';
+echo'<p class="category">'.$row['category_name'].'</p>';
+echo'<hr>';
+echo'<p class="cost">₹'.$row['price'].'</p>';
+echo'<p class="fake"><strike>₹'.$fakeprice.'</strike></p>';
+echo'<p class="tax">*Additional Taxes Apply</p>';
+echo'<p class="productdetails"> Product Details</p>';
+echo'<div class="bg"><p class="details">'.$row['color'].'<br>'.$row['size'].'<br>'.$row['specifications'].'</p>';
+echo'</div>';
+echo'</div>';
+?>
 </html>
-<!-- don't know why metronaut jeans aint showing up even  though the image is there  -->
+
+
+
+
+

@@ -1,64 +1,281 @@
+
 <pages>
 <link>
-<title>Mobiles</title>
-<url>utopia_prod.php?id=6</url>
-</link>
-<link>
-<title>Laptops</title>
-<url>utopia_prod.php?id=7</url>
-</link>
-<link>
-<title>Home appliances
-</title>
-<url>
-utopia_prod.php?id=11
-</url>
-</link>
-<link>
-<title>Chandeliers</title>
-<url>utopia_prod.php?id=17</url>
-</link>
-<link>
-<title>Curtains</title>
-<url>utopia_prod.php?id=13</url>
-</link>
-<link>
-	<title>Furniture
-	</title>
-	<url>utopia_prod.php?id=12
-	</url>
-</link>
-<link>
-	<title>Women topwear
+	<title>
+		Redmi Note 7 Pro
 	</title>
 	<url>
-		utopia_prod.php?id=15
+		utopia_prod.php?id=100
 	</url>
 </link><link>
 	<title>
-	</title>
-	<url>Women Ethinic
-		utopia_prod.php?id=16
-	</url>
-</link><link>
-	<title>Men Topwear
+		Realme C1
 	</title>
 	<url>
-		utopia_prod.php?id=8
+		utopia_prod.php?id=101
 	</url>
 </link><link>
-	<title>Men Bottomwear
-	</title>
-	<url>
-		utopia_prod.php?id=9
-	</url>
-</link>
-<link>
 	<title>
-		Men Accessories
+		Asus Zenfone Max Pro M2
 	</title>
 	<url>
-		utopia_prod.php?id=10
+		utopia_prod.php?id=102
 	</url>
-</link>
-</pages>
+</link><link>
+	<title>
+		POCO F1
+	</title>
+	<url>
+		utopia_prod.php?id=103
+	</url>
+</link><link>
+	<title>
+		Apple iPhone X
+	</title>
+	<url>
+		utopia_prod.php?id=104
+	</url>
+</link><link>
+	<title>
+		Acer Aspire 3 Pentium Quad core
+	</title>
+	<url>
+		utopia_prod.php?id=105
+	</url>
+</link><link>
+	<title>
+		Lenovo Yoga 730 core i7 8th Gen
+	</title>
+	<url>
+		utopia_prod.php?id=106
+	</url>
+</link><link>
+	<title>
+		Dell Inspiron 14 3000 core i3 7th Gen
+	</title>
+	<url>
+		utopia_prod.php?id=107
+	</url>
+</link><link>
+	<title>Apple MacBook Air Core i5 5th Gen
+	</title>
+	<url>
+		utopia_prod.php?id=108
+	</url>
+</link><link>
+	<title>HP Pavilion 15 Core i5 8th Gen
+	</title>
+	<url>
+		utopia_prod.php?id=109
+	</url>
+</link><link>
+	<title>Qlonz store Men Solid Casual Store 
+	</title>
+	<url>
+		utopia_prod.php?id=110
+	</url>
+</link><link>
+	<title>Peter England Men Checkered casual spread shirt
+	</title>
+	<url>
+		utopia_prod.php?id=111
+	</url>
+</link><link>
+	<title>Park Avenue Men Solid Formal Spread shirt
+	</title>
+	<url>
+		utopia_prod.php?id=112
+	</url>
+</link><link>
+	<title>Metronaut skinny men light blue jeans
+	</title>
+	<url>
+		utopia_prod.php?id=113
+	</url>
+</link><link>
+	<title>Park Avenue Regular fit men beige trousers
+	</title>
+	<url>
+		utopia_prod.php?id=114
+	</url>
+</link><link>
+	<title>Voltas 1.5 ton 3 star split AC
+	</title>
+	<url>
+		utopia_prod.php?id=115
+	</url>
+</link><link>
+	<title>Carrier 1.0 ton 3 star split AC
+	</title>
+	<url>
+		utopia_prod.php?id=116
+	</url>
+</link><link>
+	<title>Mi LED smart TV 4A pro
+	</title>
+	<url>
+		utopia_prod.php?id=117
+	</url>
+</link><link>
+	<title>Samsung HD Ready LED TV
+	</title>
+	<url>
+		utopia_prod.php?id=118
+	</url>
+</link><link>
+	<title>Samsung Fully Automatic Top Load Washing machine
+	</title>
+	<url>
+		utopia_prod.php?id=119
+	</url>
+</link><link>
+	<title>Bajaj Solo Microwave Oven
+	</title>
+	<url>
+		utopia_prod.php?id=120
+	</url>
+</link><link>
+	<title>Lenovo 10400 mAh Power Bank 
+	</title>
+	<url>
+		utopia_prod.php?id=121
+	</url>
+</link><link>
+	<title>boAt Bassheads 220 Wired Headset
+	</title>
+	<url>
+		utopia_prod.php?id=122
+	</url>
+</link><link>
+	<title>Sony 310 AP Wired headset
+	</title>
+	<url>
+		utopia_prod.php?id=123
+	</url>
+</link><link>
+	<title>Mi Micro USB Cable
+	</title>
+	<url>
+		utopia_prod.php?id=124
+	</url>
+</link><link>
+	<title>Forzza Madison Engineered Wood 2 Door Wardrobe
+	</title>
+	<url>
+		utopia_prod.php?id=125
+	</url>
+</link><link>
+	<title>Woodness Pluto Almirah
+	</title>
+	<url>
+		utopia_prod.php?id=126
+	</url>
+</link><link>
+	<title>Nilkamal plastic outdoor chair
+	</title>
+	<url>
+		utopia_prod.php?id=127
+	</url>
+</link><link>
+	<title>Muebles Casa Marco Leatherette
+	</title>
+	<url>
+		utopia_prod.php?id=128
+	</url>
+</link><link>
+	<title>Woodness Vivian 6 Seater Dining set
+	</title>
+	<url>
+		utopia_prod.php?id=129
+	</url>
+</link><link>
+	<title>Home sizzler door curtain
+	</title>
+	<url>
+		utopia_prod.php?id=130
+	</url>
+</link><link>
+	<title>Homefab Polyester Door Curtain
+	</title>
+	<url>
+		utopia_prod.php?id=131
+	</url>
+</link><link>
+	<title>Tokyo Talkies casual 3/4 sleeve printed 
+	</title>
+	<url>
+		utopia_prod.php?id=132
+	</url>
+</link><link>
+	<title>Aeropostale Polo Neck T shirt
+	</title>
+	<url>
+		utopia_prod.php?id=133
+	</url>
+</link><link>
+	<title>Darzi Casual cold shoulder
+	</title>
+	<url>
+		utopia_prod.php?id=134
+	</url>
+</link><link>
+	<title>Puma round neck black T shirt
+	</title>
+	<url>
+		utopia_prod.php?id=135
+	</url>
+</link><link>
+	<title>Flying Machine Skinny dark blue jeans
+	</title>
+	<url>
+		utopia_prod.php?id=136
+	</url>
+</link><link>
+	<title>Van Heusen regular fit dark blue trousers
+	</title>
+	<url>
+		utopia_prod.php?id=137
+	</url>
+</link><link>
+	<title>Levi's skinny black jeans
+	</title>
+	<url>
+		utopia_prod.php?id=138
+	</url>
+</link><link>
+	<title>Mozila Embroidered Silk band straight gown
+	</title>
+	<url>
+		utopia_prod.php?id=139
+	</url>
+</link><link>
+	<title>Daisy fashion Applique Satin Blend Gown
+	</title>
+	<url>
+		utopia_prod.php?id=140
+	</url>
+</link><link>
+	<title>Saara Poly Silk Saree
+	</title>
+	<url>
+		utopia_prod.php?id=141
+	</url>
+</link><link>
+	<title>Gojeeva antique 5 light chandelier
+	</title>
+	<url>
+		utopia_prod.php?id=142
+	</url>
+</link><link>
+	<title>Hanging light chandelier ceiling lamp
+	</title>
+	<url>
+		utopia_prod.php?id=143
+	</url>
+</link><link>
+	<title>Crysta decorative crystal lightning fixture
+	</title>
+	<url>
+		utopia_prod.php?id=144
+	</url>
+</link></pages>

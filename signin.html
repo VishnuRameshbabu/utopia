@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="utopia.css">
+<link rel="stylesheet" href="signin.css">
+<title>utopia</title>
+</head>
+<body class="search"><p class="homeicon"><a href="utopiamain.html">&#x1F3E0; </a></p>
+<div class="align">
+<p class="searchtitle">UTOPIA</p>
+<form>
+<p class="p">Username:<input type="text" name="username"><br>
+<p class="p">Password:<input type="password"><br>
+<p class="p">Confirm Password:<input type="password"><br>
+<p class="p">Gender:<select id="Gender" name="Gender">
+	<option value="M" <?php if(!empty($gender)&& $gender=='M') echo 'selected ="selected"';?>Male</option>
+	<option value="F" <?php if(!empty($gender)&& $gender=='F') echo 'selected ="selected"';?>Female</option>
+</select><br />
+<p class="p">Date of Birth:<input type="Date" name="date_of_birth" id="date_of_birth"><br>
+<p class="p">Phone Number:<input type="text" name="phone_no"id="phone_no"><br>
+<p class="p">Email ID:<input type="text"><br>
+<p class="p">Locality Address:<input type="text" name="locality_address" id="locality_address" size="100"><br>
+<p class="p">City:<input type="text" name="city" id="city" size="30"><br>
+<p class="p">State:<input type="text" name="state" id="state" size="30"><br><br>
+<input type="submit" name="submit">
+</input>
+</form>
+</div>
+</body>
+</html>

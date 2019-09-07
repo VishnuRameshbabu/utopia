@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="utopia_style.css" >
+</head>
+<body>
+
+<div class="navbar">
+<div class="dropdown">
+    <button class="dropbtn"><p class="drop"> &#9776; </p>
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <div class="header">
+        <h4>Categories</h4>
+      </div>   
+      <div class="row">
+        <div class="column">
+          <a href="utopia_prod.php?id=1"><h4>Men</h4></a>
+          <a href="utopia_prod.php?id=8">Topwear</a>
+          <a href="utopia_prod.php?id=9">Bottomwear</a>
+          <a href="utopia_prod.php?id=10">Accessories</a>
+        </div>
+        <div class="column">
+          <a href="utopia_prod.php?id=2"><h4>Women</h4></a>
+          <a href="utopia_prod.php?id=14">Topwear</a>
+          <a href="utopia_prod.php?id=15">Bottomwear</a>
+          <a href="utopia_prod.php?id=16">Ethinic</a>
+        </div>
+        <div class="column">
+          <a href="utopia_prod.php?id=3"><h4>Electronics</h4></a>
+          <a href="utopia_prod.php?id=6">Mobile</a>
+          <a href="utopia_prod.php?id=7">Laptops</a>
+          <a href="utopia_prod.php?id=11">Home appliances</a>
+        </div>
+        <div class="column">
+          <a href="utopia_prod.php?id=4"><h4>Home Decor</h4></a>
+          <a href="utopia_prod.php?id=17">Chandeliers</a>
+          <a href="utopia_prod.php?id=12">furniture</a>
+          <a href="utopia_prod.php?id=13">Curtains</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="logo"><a href="utopiamain.html">UTOPIA</a></p>
+  <p class="icon"><a href="signup_ecommerce.php">&#128102;</a>
+  <a href="searchfunc_utopia.php">&#128269;</a>
+  <a href="login.php">&#128722;</a></p>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="photos/men.jpg" style="width:100%;height:450px;">
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="photos/women.jpg" style="width:100%;height:450px;">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="photos/home.jpg" style="width:100%;height:450px;">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<p class="menumentitle">SHOP BY CATEGORY</P>
+<div class="hero-image"><img  class="hero-image" src="photos/product.jpg">
+  <div class="hero-text">
+    <h1 style="font-size:30px">MEN</h1>
+    <a href="utopia_prod.php?id=1"><button>SHOP</button></a>
+  </div>
+</div>
+<div class="hero-image"><img class="hero-image" src="photos/product1.jpg">
+  <div class="hero-text">
+    <h1 style="font-size:30px">WOMEN</h1>
+    <a href="utopia_prod.php?id=2"><button>SHOP</button></a>
+  </div>
+</div>
+
+<div class="hero-image"><img  class="hero-image"src="photos/product2.jpg">
+  <div class="hero-text">
+    <h1 style="font-size:30px">ELECTRONICS</h1>
+    <a href="utopia_prod.php?id=3"><button>SHOP</button></a> 
+  </div>
+</div>
+
+<div class="hero-image"><img class="hero-image" src="photos/product3.jpg">
+  <div class="hero-text">
+    <h1 style="font-size:30px">HOME DECOR</h1>
+<a href="utopia_prod.php?id=4"><button>SHOP</button></a>
+  </div>
+</div>
+<a href="search.html"><img src="photos/style.jpg" style="margin-top:2%;width:100%;height:auto;"></a>
+<a href="utopia_prod.php?id=1"><div class="forhimyellow"><p style="margin-top:1%;">#FORHIM</p>
+   <img src="photos/forhim.jpg" style="margin:2%;width:300px;height:auto;">
+   <img src="photos/forhim1.jpg" style="margin:2%;width:500px;height:auto;">
+   <img src="photos/forhim2.jpg" style="margin:2%;width:300px;height:auto;">
+</div></a>
+
+<a href="utopia_prod.php?id=2"><div class="forherpink"><p style="margin-top:1%;">#FORHER</p>
+   <img src="photos/forher.jpg" style="margin:2%;width:300px;height:auto;">
+   <img src="photos/forher1.jpg" style="margin:2%;width:500px;height:auto;">
+   <img src="photos/forher2.jpg" style="margin:2%;width:300px;height:auto;">
+</div></a>
+
+<div class="mainend">
+ UTOPIA
+ </div>
+</body>
+</html>
